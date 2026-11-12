@@ -10,3 +10,30 @@ body{
     background: linear-gradient(to bottom,purple),magenta;
     min-height: 100vh;
 }
+
+main {
+    display: inline-block;
+    position: relative;
+    margin-top: 2%;
+    padding: 15px;
+}
+
+.pokedex{
+    width: 100%;
+    max-width: 600px;
+}
+
+.pokemon_data{
+    position: absolute;
+    font-weight: 600px;
+    color: blueviolet;
+    top: 54.5%;
+    right: 27%;
+    font-size: clamp(8px,5vw,24px);
+}
+
+pokemon_name{
+    color: red;
+    text-transform: capitalize;
+}
+
