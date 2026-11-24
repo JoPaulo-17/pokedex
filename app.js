@@ -26,4 +26,8 @@ const renderPokemon = async (pokemon)=> {
         pokemon_number.innerHTML = ''
         pokemon_img.style.display = 'nome'
     }
+} else{
+    pokemon_name.innerHTML = 'Não encontrado';
+    pokemon_number.innerHTML = ''
+    pokemon_img.style.display = 'none'
 }
