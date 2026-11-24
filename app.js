@@ -18,3 +18,12 @@ const fetchpokemon = async (pokemon) => {
         return data;
     }
 }
+
+const renderPokemon = async (pokemon)=> {
+    const data = await fetchpokemon(pokemon);
+    if(data){
+        pokemon_name.innerHTML = 'Não encontrado';
+        pokemon_number.innerHTML = ''
+        pokemon_img.style.display = 'nome'
+    }
+}
