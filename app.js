@@ -31,3 +31,20 @@ const renderPokemon = async (pokemon)=> {
     pokemon_number.innerHTML = ''
     pokemon_img.style.display = 'none'
 }
+pokemon_form.addEventListener("submit", (event)=>{
+    event.preventDefalt();
+    console.log("Enviando Formulario", pokemon_input.valuetoLowerCase());
+    renderPokemon(pokemon_input.value.toLowerCase());
+    input.value = ''
+})
+pokemon_prev.addEventListener("click", ()=>{
+    if(searchPokemon -= 1){
+        searchPokemon -= 1
+        renderPokemon(searchPokemon)
+    }
+})
+pokemon_next.addEventListener("click", ()=>{
+    searchPokemon += 1
+    renderPokemon(searchPokemon)
+})
+renderPokemon(searchPokemon)
